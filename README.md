@@ -24,9 +24,8 @@ If you gain alot of BTC , then others will simply take it from you if you leave 
 
 
 
-> [!NOTE] 
-    
- >    __It is seen as after some time , the hackv1 continues working but the HackYou Bot Breaks (you will see Negative Time Errors) . This happens due to late use of Codes and old codes__
+>[!NOTE] 
+>    __It is seen as after some time , the hackv1 continues working but the HackYou Bot Breaks (you will see Negative Time Errors) . This happens due to late use of Codes and old codes__
 
 ## HACKv2.py
 
