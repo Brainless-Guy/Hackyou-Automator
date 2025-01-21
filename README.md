@@ -15,7 +15,7 @@
 
 - After Setting up All the ids /code in Hacks.txt , It will read the code and execute ```/hack {id}```
 
-> ####  Auto Upgrade feature
+ ####  Auto Upgrade feature
 If you gain alot of BTC , then others will simply take it from you if you leave it like that all along, To prevent it There is a must need of upgrade 
 
 - do a __*```/exploit```*__ or __*```/virus```*__ , then press __Shift__ , It will simply Record the Mouse Position , and randomly upgrade your exploits , firewall and Virus
@@ -35,7 +35,7 @@ If you gain alot of BTC , then others will simply take it from you if you leave 
  - Do a __```/scan```__ and record the position 
     - #### <font color='lightcyan'>First : Bottom Right</font> 
     - ![Blue Colors Represent The Mouse for First Coordinate](assets/image.png)
-    - > __Place The mouse Cursor Here ,and Press SHIFT__
+    -  __Place The mouse Cursor Here ,and Press SHIFT__
     - IT SHOULD BE DONE SIMULTANEOUSLY AFTER a ```/SCAN```
     
     - ### <font color='lightgreen'>First : TOP LEFT</font> 
@@ -47,27 +47,27 @@ If you gain alot of BTC , then others will simply take it from you if you leave 
 
 ## <font color='lightYellow'>DEPENDENCIES</font>
 ### - HACKv1
- > time  ==> ```pip install time```
+ - time  ==> ```pip install time```
 
- > pynput ==> ```pip install pynput```
+ - pynput ==> ```pip install pynput```
 
- > pyautogui ==> ```pip install pyautogui```
+ - pyautogui ==> ```pip install pyautogui```
 
- > random ==> ```pip install random```
+ - random ==> ```pip install random```
 
 ### - HACKv2
  #### INSTALL ALL THAT IS MENTIONED IN HACKv1
- > PyTesseract ==> ```pip install pytesseract```
+ - PyTesseract ==> ```pip install pytesseract```
 
- > Download Tesseract From Here : [Tesseract Github](https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe)
+ - Download Tesseract From Here : [Tesseract Github](https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe)
 
  - __Install it in ```C:\Program Files\Tesseract-OCR\tesseract.exe```__ (DEFAULT !) or Else you have to change the location in HACKV2.py
 
 
 
-> ### [!NOTE]
+> [!NOTE]
 > You can't Use your PC simultaneously When It happens , Leave It for automation 
-> ## [!WARNING]
-> #### I am not Responsible for your ban (Not likely to Happen).
+> [!WARNING]
+>  I am not Responsible for your ban (Not likely to Happen).
 
 # <font color='lightblue'>ENJOY !</font>
