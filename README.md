@@ -67,6 +67,7 @@ If you gain alot of BTC , then others will simply take it from you if you leave 
 
 > [!NOTE]
 > You can't Use your PC simultaneously When It happens , Leave It for automation 
+
 > [!WARNING]
 >  I am not Responsible for your ban (Not likely to Happen).
 
