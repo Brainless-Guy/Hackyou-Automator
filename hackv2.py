@@ -1,20 +1,48 @@
 from pynput import keyboard
-import time , random , pytesseract , pyautogui
+import time , random , pytesseract , pyautogui,os
 from setup import scrape_numbers
 from PIL import ImageGrab
 # Set Tesseract-OCR path
 import platform
-
+script_dir= os.path.dirname(os.path.abspath(__file__))
 os_name = platform.system()
 
 if os_name == 'Darwin':
     pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
-elif os_name == 'Linux':                                                                 #DEFAULT , You can change it!
+elif os_name == 'Linux':                                                              #DEFAULT , You can change it!
     pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 elif os_name == 'Windows':
     pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 else:
     print("Tesseract is Not supported or Its Not INSTALLED!")
+setup = input("Do you want to setup Auto-Upgrade ? (Y/N) : ")
+if setup.capitalize() == 'Y':
+    print("Please Enter Shift on the Upgrade Button to Record the position of Mouse!!")
+    def record3():
+        record = pyautogui.position()
+        position_3 = tuple(record)
+        x_coord = position_3[0]
+        y_coord = position_3[1]
+        return (x_coord,y_coord)
+    def on_press3(key):
+            k = "{0}".format(key)           
+    def on_release3(key):
+        if key == keyboard.Key.shift:
+            global position_3
+            position_3 = record3()
+            print(position_3)
+            return False 
+    
+    with keyboard.Listener(
+        on_press=on_press3,
+
+        on_release=on_release3) as listener3:
+        listener3.join()
+    x_ = position_3[0]
+    y_ = position_3[1]
+    time.sleep(2)
+
+
 
 
 print("Do a /scan and , Please Put your Cursor below-Right of the scan and Press SHIFT!!")
@@ -88,18 +116,33 @@ def auto_hack(ids, x=None, y=None):
             pyautogui.doubleClick(x, y)
             time.sleep(3)
 
+upgrade_Counter = 1
 if __name__ == "__main__":
     while True:
-        time.sleep(2)
-        # Capture text and extract IDs
-        extracted_text = capture_and_extract_text(x1, y1, x2, y2)
-        ids = scrape_numbers(extracted_text)
-        auto_hack(ids)
-
-        # Sleep and trigger the /scan command again
-        time.sleep(5)
-        pyautogui.write("/scan")
-        time.sleep(1)
-        pyautogui.press("enter")
-        pyautogui.press("enter")
-        time.sleep(2)
+            if upgrade_Counter % 5 != 0:
+                time.sleep(2)
+                upgrade_Counter += 1
+                extracted_text = capture_and_extract_text(x1, y1, x2, y2)
+                ids = scrape_numbers(extracted_text)
+                auto_hack(ids)
+                time.sleep(7)
+                pyautogui.write("/scan")
+                time.sleep(1)
+                pyautogui.press("enter")
+                pyautogui.press("enter")
+                time.sleep(2)
+                
+            else:
+                upgrade_Counter += 1
+                listofChoices = ["virus","exploit","firewall"]
+                time.sleep(0.5)
+                pyautogui.write(f"/{random.choice(listofChoices)}")
+                time.sleep(0.5)
+                pyautogui.press("enter")
+                time.sleep(0.5)
+                pyautogui.press("enter")
+                time.sleep(3)
+                pyautogui.doubleClick(x_,y_)
+                time.sleep(3)
+                
+                
