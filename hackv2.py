@@ -101,7 +101,7 @@ def capture_and_extract_text(x1, y1, x2, y2):
 def auto_hack(ids, x=None, y=None):
     for pid in ids:
         if pid:
-            print(pid)
+            # print(pid)
             pyautogui.write(f"/hack ")
             time.sleep(0.5)
             pyautogui.write(pid)
