@@ -42,7 +42,7 @@ If you gain alot of BTC , then others will simply take it from you if you leave 
     - ![alt text](assets/image2.png)
 - SIT BACK , ENJOY
 
--  NO upgrade feature in V2 (make your Firewall  Stronger!)
+-  NO upgrade feature in V2 (make your Firewall  Stronger!) {UPDATE : NOW IT DOES }
 
 ## <font color='lightYellow'>DEPENDENCIES</font>
 ### - HACKv1
