@@ -131,7 +131,7 @@ if __name__ == "__main__":
                 pyautogui.press("enter")
                 pyautogui.press("enter")
                 time.sleep(2)
-                
+                #
             else:
                 upgrade_Counter += 1
                 listofChoices = ["virus","exploit","firewall"]
